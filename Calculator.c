@@ -118,19 +118,21 @@ void MatrixAddition() {
     }
     int matrix1[m][n], matrix2[m][n];
     printf("Enter elements of the first matrix:\n");
-    for (int i = 0; i < m; i++)
-        for (int j = 0; j < n; j++)
+    for (int i = 0; i < m; i++){
+        for (int j = 0; j < n; j++){
             scanf("%d", &matrix1[i][j]);
-
+        } 
+    }
     printf("Enter elements of the second matrix:\n");
-    for (int i = 0; i < m; i++)
-        for (int j = 0; j < n; j++)
+    for (int i = 0; i < m; i++){
+        for (int j = 0; j < n; j++){
             scanf("%d", &matrix2[i][j]);
-
+        }
+    }    
     printf("\nSum of the matrices is:\n");
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
-            printf("%5d", matrix1[i][j] + matrix2[i][j]);
+            printf(" %d", matrix1[i][j] + matrix2[i][j]);
         }
         printf("\n");
     }
@@ -180,7 +182,7 @@ void MatrixMultiplication() {
     printf("\nMultiplication of your Matrices is:\n");
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < p; j++) {
-            printf("%5d ", result[i][j]);
+            printf(" %d", result[i][j]);
         }
         printf("\n");
     }

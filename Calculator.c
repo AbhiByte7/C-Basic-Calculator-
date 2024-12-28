@@ -112,20 +112,23 @@ void MatrixAddition() {
     scanf("%d", &m);
     printf("Enter the number of columns in your matrix: ");
     scanf("%d", &n);
+    printf("\n");
      if (m <= 0 || n <= 0) {
         printf("\nMatrix dimensions must be positive integers.\n");
         return;
     }
     int matrix1[m][n], matrix2[m][n];
-    printf("Enter elements of the first matrix:\n");
+   
     for (int i = 0; i < m; i++){
         for (int j = 0; j < n; j++){
+            printf("Enter the value at (%d, %d) cell of the first matrix: ", i + 1, j + 1);
             scanf("%d", &matrix1[i][j]);
         } 
     }
-    printf("Enter elements of the second matrix:\n");
+    printf("\n");
     for (int i = 0; i < m; i++){
         for (int j = 0; j < n; j++){
+            printf("Enter the value at (%d, %d) cell of the second matrix: ", i + 1, j + 1);
             scanf("%d", &matrix2[i][j]);
         }
     }    
@@ -160,7 +163,7 @@ void MatrixMultiplication() {
             scanf("%d", &matrix1[i][j]);
         }
     }
-
+    printf("\n");
     int matrix2[n][p];
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < p; j++) {
